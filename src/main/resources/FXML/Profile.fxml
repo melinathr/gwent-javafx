@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ProfileMenu"
+            id="pane"
+            stylesheets="@../CSS/1.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <content>
+                <VBox alignment="CENTER" spacing="20.0" styleClass="vbox">
+                    <TextField fx:id="usernameField" maxWidth="200" promptText="new Username"/>
+                    <Button onMouseClicked="#handleChangeUsername" styleClass="button" text="Change Username"/>
+                    <TextField fx:id="newEmailField" maxWidth="200" promptText="new Email"/>
+                    <Button onMouseClicked="#handleChangeEmail" styleClass="button" text="change Email"/>
+                    <TextField fx:id="newNickNameField" maxWidth="200" promptText="new Nick name"/>
+                    <Button onMouseClicked="#handleChangeNickName" styleClass="button" text="change Nick name"/>
+                    <TextField fx:id="oldPasswordField" maxWidth="200" promptText="old Password"/>
+                    <TextField fx:id="newPasswordField" maxWidth="200" promptText="new Password"/>
+                    <Button onMouseClicked="#handleChangePassword" styleClass="button" text="Change password"/>
+                    <Button onMouseClicked="#showUsersInfo" styleClass="button" text="show Info"/>
+                    <Button onMouseClicked="#gamehistory" styleClass="button" text="game history"/>
+                    <Button onMouseClicked="#backtoMainMenu" styleClass="button" text="back"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

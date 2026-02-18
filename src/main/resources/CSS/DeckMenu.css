@@ -1,0 +1,55 @@
+/* Define a dark, medieval-themed background for the main pane */
+.root {
+    -fx-background-color: #ffffff; /* Dark background color */
+    -fx-font-family: 'Georgia', serif; /* Serif font for a medieval feel */
+}
+
+/* Style for the labels */
+.label {
+    -fx-text-fill: #090000; /* Light text color for contrast */
+    -fx-font-size: 20px; /* Slightly larger font size */
+    -fx-padding: 15px; /* Padding around the text */
+}
+
+/* Style for the ListViews */
+.list-view {
+    -fx-background-color: #ede3e3; /* Darker background for the list */
+    -fx-border-color: #ecdede; /* Border color for the list */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 5px; /* Padding inside the list */
+    -fx-control-inner-background: #f6eeee; /* Inner background color */
+    -fx-cell-hover-color: rgba(241, 70, 70, 0.5); /* Hover color for list items */
+    -fx-text-fill: #090000; /* Text color */
+    -fx-font-size: 18px; /* Font size */
+}
+
+/* Style for the buttons */
+.button {
+    -fx-background-color: rgb(204, 198, 198); /* Darker button background */
+    -fx-text-fill: #090000; /* White text color */
+    -fx-font-size: 20px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding around the button */
+    -fx-border-color: #ccc6c6; /* Border color for the button */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* Style for buttons on hover */
+.button:hover {
+    -fx-background-color: #715b5b; /* Lighter background on hover */
+}
+
+/* Style for selected list items */
+.list-cell:selected {
+    -fx-background-color: #ffffff; /* Background color for selected item */
+    -fx-text-fill: #090000; /* Text color for selected item */
+}
+
+/* Style for the VBox containers */
+.vbox {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-spacing: 12px; /* Spacing between elements */
+    -fx-padding: 12px; /* Padding around the container */
+}

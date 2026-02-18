@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.RankingMenu"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <top>
+        <Button text="Back" onAction="#goBack" />
+    </top>
+    <center>
+        <TableView fx:id="rankingTable" prefWidth="600.0" prefHeight="400.0">
+            <columns>
+                <TableColumn fx:id="rankColumn" text="Rank" prefWidth="100.0"/>
+                <TableColumn fx:id="usernameColumn" text="Username" prefWidth="200.0"/>
+                <TableColumn fx:id="maxScoreColumn" text="Max Score" prefWidth="200.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

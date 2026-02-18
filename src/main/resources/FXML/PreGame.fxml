@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane id="pane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.PreGameMenu"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@../CSS/1.css">
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Label text="PreGame Menu" styleClass="title"/>
+            <Text styleClass="text-style" text="Player1:Select your competitor and you cards"/>
+            <HBox alignment="CENTER" spacing="15">
+                <TextField fx:id="rival" maxWidth="200" promptText="competitor's username"/>
+                <Button styleClass="okButton" text="ok" onMouseClicked="#chooseRival"/>
+            </HBox>
+            <Button text="choose faction" onMouseClicked="#chooseFaction"/>
+            <Button text="choose leader" onMouseClicked="#chooseLeader"/>
+            <Button text="choose cards" onMouseClicked="#chooseCards"/>
+            <Button text="see info" onMouseClicked="#showInfo"/>
+            <Button text="change turn" onMouseClicked="#changeTurn"/>
+            <Button text="back" onMouseClicked="#back"/>
+        </VBox>
+    </center>
+
+
+</BorderPane>

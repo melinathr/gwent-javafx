@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane  id="pane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.StartMenu"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@../CSS/1.css">
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <Label text="Gwent: The Witcher Card Game"/>
+            <Button text="log in" onMouseClicked="#login"/>
+            <Button text="register" onMouseClicked="#register"/>
+            <Button text="Exit" onMouseClicked="#exit"/>
+        </VBox>
+    </center>
+
+
+</BorderPane>
